@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Quieres ser mi novia?</title>
+  <link rel="stylesheet" href="mensaj.css">
+</head>
+<body>
+  <div class="container">
+    <h1>¿Podemos intentarlo una ves mas negrita? 💕</h1>
+    <div class="buttons">
+      <button id="yes" onclick="sayYes()">Sí</button>
+      <button id="no">No</button>
+    </div>
+  </div>
+  <script>
+    const noButton = document.getElementById("no");
+
+    function moveButton() {
+      const container = document.querySelector(".container");
+      const containerRect = container.getBoundingClientRect();
+      const buttonWidth = noButton.offsetWidth;
+      const buttonHeight = noButton.offsetHeight;
+
+      const x = Math.random() * (containerRect.width - buttonWidth);
+      const y = Math.random() * (containerRect.height - buttonHeight);
+
+      noButton.style.left = `${x}px`;
+      noButton.style.top = `${y}px`;
+    }
+
+    noButton.addEventListener("mouseover", moveButton);
+    noButton.addEventListener("touchstart", moveButton);
+
+    function sayYes() {
+      alert("¡Te amo Negrito! 💖");
+    }
+  </script>
+</body>
+</html>

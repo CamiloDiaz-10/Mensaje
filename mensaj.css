@@ -1,0 +1,57 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffe6e6;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    max-width: 90%;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff007f;
+  }
+  
+  .buttons {
+    position: relative;
+    display: inline-block;
+  }
+  
+  button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  button#yes {
+    background-color: #ff69b4;
+    color: white;
+  }
+  
+  button#yes:hover {
+    background-color: #ff85c1;
+  }
+  
+  button#no {
+    background-color: #ffcccc;
+    color: #ff007f;
+    position: absolute;
+  }
+  
